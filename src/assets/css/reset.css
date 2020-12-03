@@ -2,3 +2,10 @@ blockquote, body, button, dd, dl, header, dt, fieldset, form, h1, h2, h3, h4, h5
     margin: 0;
     padding: 0;
 }
+i {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
