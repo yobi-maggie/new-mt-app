@@ -1,12 +1,31 @@
-@font-face {font-family: "com_header";
-    src: url('../font/header.woff?t=1501036445556') format('woff'), /* chrome, firefox */
-}
 @font-face {
     font-family: "com_header";
-    src: url("../font/iconfont-search.woff") format("woff"), /* chromeã€firefox */
-
+    src: url('https://s0.meituan.net/bs/fe-web-meituan/5058856/font/header.woff?t=1501036445556') format('woff'); /* chrome, firefox */
 }
+// @font-face {
+//     font-family: "com_header";
+//     src: url("https://s0.meituan.net/bs/fe-web-meituan/5058856/font/iconfont-search.woff") format("woff"); /* chromeã€firefox */
+// }
 
 .header-icon {
     font-family: "com_header" !important;
+}
+
+.header {
+    background-color: #fff;
+    .header-content {
+        width: 1190px;
+        margin: 0 auto;
+        padding-bottom: 35px;
+    }
+    & > .header-content {
+        height: 157px;
+    }
+    .header-icon {
+        font-family: "com_header" !important;
+        font-size: 18px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 }

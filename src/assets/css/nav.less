@@ -1,17 +1,147 @@
 .el-header {
     padding: 0 !important;
-    .nav-bar {
+    .header-bar {
         background: #F8F8F8;
         width: 100%;
         font-size: 12px;
         color: #999;
         height: 40px;
-        line-height: 40px;
-        .header-content {
-            width: 1190px;
-            margin: 0 auto;
+        a {
+            color: #999;
+        }
+        .header-bar-position {
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            .header-icon {
+                font-size: 12px;
+            }
+            .current-city {
+                color: #666;
+            }
+            .change-city {
+                background: #F4F4F4;
+                border: 1px solid #E5E5E5;
+                border-radius: 2px;
+                color: #666;
+                margin: 0 4px;
+                padding: 0 2px;
+            }
+            .city-guess {
+                margin: 0 4px;
+            }
+            .near-citys {
+                display: inline-block;
+            }
+            .user-entry {
+                display: inline-block;
+                margin-left: 15px;
+                .user-up {
+                    color: #FE8C00;
+                }
+                a {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .header-icon.position-icon::before {
+            content: "\e60a";
+            font-family: "com_header"
         }
         
+        .header-bar-nav {
+            float: right;
+            .header-nav-first {
+               & > li {
+                    float: left;
+                    position: relative;
+                    height: 40px;
+                    padding: 12px 14px;
+                    box-sizing: border-box;
+                    border-left: 1px solid transparent;
+                    border-right: 1px solid transparent;
+                    a {
+                        display: block;
+                    }
+               }
+                .header-nav-second {
+                    position: absolute;
+                    border: 1px solid #E5E5E5;
+                    background: #fff;
+                    text-align: center;
+                    z-index: 1000;
+                    right: -1px;
+                    top: 95%;
+                    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                    box-sizing: content-box;
+                    display: none;
+                    .header-nav-third {
+                        float: left;
+                        margin-right: 47px;
+                        dt {
+                            margin-bottom: 26px;
+                            font-size: 14px;
+                            color: #222222;
+                            font-weight: 500;
+                        }
+                        dd {
+                            a {
+                                display: block;
+                                padding: 5px 0;
+                            }
+                        }
+                     
+                    }
+                    .header-jiulv {
+                        width: 234px;
+                        dd {
+                            width: 33%;
+                            text-align: center;
+                            float: left;
+                        }
+                    }
+                    .header-meishi {
+                        width: 156px;
+                        dd {
+                            width: 50%;
+                            text-align: center;
+                            float: left;
+                        }
+                    }
+                    .header-movie {
+                        width: 90px;
+                    }
+                    .header-app {
+                        float: right;
+                        .appicon {
+                            width: 60px;
+                            height: 60px;
+                            border: 0;
+                        }
+                        dd {
+                            display: inline-block;
+                            margin: 0 8px;
+                        }
+                    }
+                }
+            }
+           
+            .header-nav-merchant {
+                width: 140%;
+                border-top-left-radius: 4px;
+            }
+            .header-nav-my {
+                width: 100%;
+            }
+            .header-nav-site {
+                width: 1200px;
+                box-sizing: border-box;
+                border-top-left-radius: 4px;
+                padding: 30px 36px 36px 47px;
+            }
+        }
     }
 }
 
