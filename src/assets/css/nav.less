@@ -6,8 +6,12 @@
         font-size: 12px;
         color: #999;
         height: 40px;
+        
         a {
             color: #999;
+            &:hover {
+                color: #FE8C00;
+            }
         }
         .header-bar-position {
             float: left;
@@ -63,6 +67,16 @@
                     a {
                         display: block;
                     }
+                    &.has-child:hover {
+                        color: #FE8C00;
+                        background-color: #fff;
+                        border-color: #E5E5E5;
+                        box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+                        .header-nav-second {
+                            display: block;
+                        }
+                    }
+
                }
                 .header-nav-second {
                     position: absolute;
@@ -125,15 +139,30 @@
                             margin: 0 8px;
                         }
                     }
+                    &:after {
+                        content: "";
+                        background: #fff;
+                        width: 76px;
+                        height: 3px;
+                        position: absolute;
+                        top: -2px;
+                        right: 0;
+                    }
                 }
             }
            
             .header-nav-merchant {
                 width: 140%;
                 border-top-left-radius: 4px;
+                a {
+                    line-height: 35px;
+                }
             }
             .header-nav-my {
                 width: 100%;
+                a {
+                    line-height: 35px;
+                }
             }
             .header-nav-site {
                 width: 1200px;
